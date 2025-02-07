@@ -1,6 +1,7 @@
 /* X-Small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
-.container {
+.container,
+.container-fluid {
     --total-column: 12;
     --gutter-x: 1.5rem;
     --gutter-y: 0;
@@ -168,13 +169,21 @@
     --gutter-x: 0;
     --gutter-y: 0;
 }
-
 .row.gx-0 {
     --gutter-x: 0;
 }
-
 .row.gy-0 {
     --gutter-y: 0;
+}
+.row.gx-1 {
+    --gutter-x: 4rem;
+}
+.row.gy-1 {
+    --gutter-y: 2rem;
+}
+.row.g-1 {
+    --gutter-x: 1.5rem;
+    --gutter-y: 1.5rem;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -451,6 +460,17 @@
     .row.gy-md-0 {
         --gutter-y: 0;
     }
+
+    .row.gx-md-1 {
+        --gutter-x: 1.5rem;
+    }
+    .row.gy-md-1 {
+        --gutter-y: 1.5rem;
+    }
+    .row.g-md-1 {
+        --gutter-x: 1.5rem;
+        --gutter-y: 1.5rem;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -593,7 +613,7 @@
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .container {
-        max-width: 1140px;
+        max-width: 1170px;
     }
 
     .row.row-cols-xl-auto > * {
@@ -717,18 +737,26 @@
         --gutter-x: 0;
         --gutter-y: 0;
     }
-
     .row.gx-xl-0 {
         --gutter-x: 0;
     }
-
     .row.gy-xl-0 {
         --gutter-y: 0;
+    }
+    .row.gx-xl-1 {
+        --gutter-x: 3rem;
+    }
+    .row.gy-xl-1 {
+        --gutter-y: 3rem;
+    }
+    .row.g-xl-1 {
+        --gutter-x: 3rem;
+        --gutter-y: 3rem;
     }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
     .container {
         max-width: 1320px;
     }
@@ -862,4 +890,4 @@
     .row.gy-xxl-0 {
         --gutter-y: 0;
     }
-}
+} */
